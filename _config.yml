@@ -1,7 +1,7 @@
-title: Long Haul
+title: Eelco Kos
 description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
 
-url: http://brianmaierjr.github.com/long-haul
+url: http://eelcokos.github.io
 baseurl: ""
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
