@@ -14,7 +14,7 @@ body {
 	font-family: $serif;
 	line-height: 1.75;
 	font-size: 112.5%; // 18px base font size
-	color: $black;
+	color: $primary-color;;
 	overflow-x: hidden;
 
 	p , ul {
@@ -75,8 +75,8 @@ MENU STYLING
 		li {
 		  width: 100%;
 		  display: block;
-		  background: seagreen;
-		  border-bottom: 2px solid lighten(seagreen, 5%);
+		  background: $primary-color;
+		  border-bottom: 2px solid lighten($primary-color, 5%);
 
 		  a {
 		  	color: white;
@@ -125,7 +125,7 @@ MENU STYLING
 
   &:hover {
   	color: white;
-  	background-color: darken(seagreen, 10%);
+  	background-color: darken($primary-color, 10%);
   }
 }
 
@@ -163,6 +163,7 @@ PAGE STYLES
 .pageTitle {
 	margin: 2rem auto 1em;
 	text-align: center;
+    color: $primary-color;
 }
 
 .content {
@@ -175,11 +176,11 @@ HEADER STYLING
 ***************/
 
 .header {
-	background-color: seagreen;
+	background-color: $primary-color;
 	background-image: url('../img/touring.jpg');
 	background-size: cover;
 	background-position: center center;
-	color: white;
+	color: $primary-color;
 	padding: 0;
 	height: 3em;
 
@@ -216,6 +217,7 @@ POST STYLING
 		text-align: center;
 		margin-top: 2rem;
 		margin-bottom: 1rem;
+        color: $primary-color;
 	}
 
 	blockquote {
@@ -229,7 +231,7 @@ POST STYLING
 			content: "";
 			position: absolute;
 			top: -1.25em;
-			background: seagreen;
+			background: $primary-color;
 			display: block;
 			height: 2px;
 			width: 150px;
@@ -240,7 +242,7 @@ POST STYLING
 			content: "";
 			position: absolute;
 			bottom: -1.25em;
-			background: seagreen;
+			background: $primary-color;
 			display: block;
 			height: 2px;
 			width: 150px;
