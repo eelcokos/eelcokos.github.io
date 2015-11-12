@@ -8,6 +8,16 @@ permalink: blog/:title/
 
 markdown: kramdown
 
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+
+highlighter: pygments
+
+paginate: 5
+
 navigation:
  - title: Home
    url: /index.html

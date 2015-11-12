@@ -22,6 +22,7 @@ I don't want to make this post to lengthy, so I assume you know how to install o
 
 Unzip and copy the  firmware to a central datastore and open a SSH connection to the ESXi host. Now the ESXCLI-plugin is installed you have extra options with esxcli:
 
+{% highlight bash %}
     ~ # esxcli brocade
     Usage: esxcli brocade {cmd} [cmd options]
     
@@ -29,9 +30,11 @@ Unzip and copy the  firmware to a central datastore and open a SSH connection to
       bcu                   Brocade Command Utility commands
       supportsave           Brocade Support Save Utility
       supportshow           Brocade Support Show Utility
+{% endhighlight %}
 
 And the specific Brocade commands:
 
+{% highlight bash %}
     ~ # esxcli brocade bcu
     
     Available command options are:
@@ -49,10 +52,12 @@ And the specific Brocade commands:
     
     ETH specific Commands:
     ethboot  vnic
+{% endhighlight %}
 
 Start the upgrade of the firmware with:
 
+{% highlight bash %}
     esxcli brocade bcu --command=”boot --update <file> -a”
-
+{% endhighlight %}
 
 When the upgrade is finished you need to reboot your host.
